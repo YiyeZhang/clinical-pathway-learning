@@ -1,0 +1,45 @@
+{% include 'header.html' %}
+<html>
+<FORM><INPUT class=button Type="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+<input class=button type="button" value="Go Back to Graph" onClick="parent.location='/graph'" />
+<input class=button type="button" value="See Node Details" onClick="parent.location='/nodedesc'" />
+</FORM> 
+<div>Node Details</div>
+<div id='info'>
+       
+        <table id="resultTable2" class="display">
+            <thead>
+            <tr>
+                <th>VV ID</th>
+                <th>source</th>
+                <th>target</th>
+                <th>delta</th>
+                <!-- <th>medication</th> -->
+                
+            </tr>
+            </thead>
+            {% for r in VVdesclist %}
+            <tr class="tttt">
+                <td>
+                    <div> {{r.name}}</div>
+                </td>
+                 <td>
+                    <div> {{r.source}}</div>
+                </td>
+                 <td>
+                    <div> {{r.target}}</div>
+                </td>
+                 <td>
+                    <div> {{r.delta}}</div>
+                </td>
+                 <!-- <td>
+                    <div> {% for d in r.med%} {{d}} .{%endfor%} </div>
+                </td> -->
+             
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+</div>
+</html>

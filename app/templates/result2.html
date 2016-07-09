@@ -1,0 +1,48 @@
+{% include 'header.html' %}
+<html>
+
+
+<FORM><INPUT class=button Type="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+<input class=button type="button" value="Graph it" onClick="parent.location='/graph'" />
+</FORM> 
+
+<div>Optimization Result</div>
+
+<div id="container">
+    <div id="demo">
+        <table id="resultTable2" class="display">
+            <thead>
+            <tr>
+                <th>node name</th>
+                <th>visit type</th>
+                <th>diagnosis</th>
+                <th>procedure</th>
+                <th>medication</th>
+                
+            </tr>
+            </thead>
+            {% for r in result_list %}
+            <tr class="tttt">
+                <td>
+                    <div> {{r.nodename}}</div>
+                </td>
+                 <td>
+                    <div> {{r.visittype}}</div>
+                </td>
+                 <td>
+                    <div> {{r.diagnosis}}</div>
+                </td>
+                 <td>
+                    <div> {{r.procedure}}</div>
+                </td>
+                 <td>
+                    <div> {{r.medication}}</div>
+                </td>
+             
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+</div>
+</html>

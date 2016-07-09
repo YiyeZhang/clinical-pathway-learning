@@ -1,0 +1,73 @@
+{% include 'header.html' %}
+<html>
+
+
+<FORM><INPUT class=button Type="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+<input class=button type="button" value="Graph it" onClick="parent.location='/graph'" />
+<input class=button type="button" value="See Node Details" onClick="parent.location='/nodedesc'" />
+<input class=button type="button" value="See VVNode Details" onClick="parent.location='/VVdesc'" />
+</FORM> 
+
+<!-- <div>Optimization Result</div> -->
+<div id='info'>
+        Number of patients who matched your profile is : {{nummatchpt}} <br>
+        
+    </div>
+<div id="container">
+    <div id="demo">
+        <table id="resultTable" class="display">
+            <thead>
+            <tr>
+                <th>Source</th>
+                <th>Target</th>
+                <!--<th>T_source</th>-->
+                <!--<th>T_target</th>-->
+                <!--<th>weight</th>-->
+                <th>patient</th>
+
+                <!--<th>count</th>-->
+                <!--<th>count_source</th>-->
+                <!--<th>count_target</th>-->
+                
+            </tr>
+            </thead>
+
+            {% for r in results_list %}
+            <tr class="tttt">
+                <!--<td>-->
+                    <!--<div> {{r.V1_source_purpose}},{{r.V1_source_diag}},{{r.V1_source_proc}},{{r.V1_source_meds}}</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div> {{r.V1_t_purpose}},{{r.V1_t_diag}},{{r.V1_t_proc}},{{r.V1_t_meds}}</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div> {{r.V2_source_purpose}},{{r.V2_source_diag}},{{r.V2_source_proc}},{{r.V2_source_meds}}</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div> {{r.V2_t_purpose}},{{r.V2_t_diag}},{{r.V2_t_proc}},{{r.V2_t_meds}}</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div> {{r.wt}}</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div> {{r.pid}}</div>-->
+                <!--</td>-->
+                <td>
+                    <div> {{r.split(";")[0]}}</div>
+                </td>
+                <td>
+                    <div> {{r.split(";")[1]}}</div>
+                </td>
+                <td>
+                    <div> {{results_list[r]}}</div>
+                </td>
+
+                
+            </tr>
+            {% endfor %}
+
+        </table>
+   
+    </div>
+</div>
+</html>

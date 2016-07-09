@@ -1,0 +1,145 @@
+<INPUT class=button Type="button" VALUE="Go Back"
+       onClick="history.go(-1);return true;">
+<input class=button type="button" value="See Node Details"
+       onClick="parent.location='/nodedesc'"/>
+<button class="button" id="stop-layout">Start layout</button>
+<div>
+    <p>
+</div>
+<div id="container">
+
+    <div id="sigma-example" width="570px" height="500px">
+
+    </div>
+    <div class="row-fluid">
+    <div class="col-md-12">
+        
+<div>
+        <!-- <div>
+            Patients who started with CKD3 and hypertension: cluster 1
+        </div>
+        <img src="static/images/ckd3_hp_t1map.png" alt="aaa" usemap="#ckd3_hp_t1">
+        <map name="ckd3_hp_t1"><area shape="circle" alt="" title="O_ckd3_hp_SB-(3-6M)-O_ckd3_hp_SB" coords="436,58,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_SB-(A6M)-O_ckd3_hp_SB" coords="425,154,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp_SB" coords="422,248,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_akf_ckd3_hp" coords="326,349,22" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_hp-(L3M)-O_akf_ckd3_hp" coords="448,361,24" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(L3M)-O_akf_ckd3_hp" coords="536,390,21" href="" target="" /><area shape="circle" alt="" title="H_ckd3_hp-(L3M)-O_akf_ckd3_hp" coords="391,415,21" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_hp-(3-6M)-O_ckd3_hp" coords="235,407,211" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_hp-(3-6M)-O_ckd3_hp" coords="297,446,23" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_hp-(L3M)-O_ckd3_hp" coords="457,465,20" href="" target="" /><area shape="circle" alt="" title="H_akf_ckd3_hp-(L3M)-O_akf_ckd3_hp" coords="517,468,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_akf_ckd3_hp" coords="368,491,19" href="" target="" /><area shape="circle" alt="" title="H_akf_ckd3_hp-(3-6M)-O_ckd3_hp" coords="497,552,21" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp" coords="457,618,27" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_statins-(3-6M)-O_ckd3_hp" coords="202,636,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_ckd3_hp" coords="283,647,26" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp_statins" coords="106,730,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_stains-(A6M)-O_ckd3_hp" coords="170,704,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_UO-(A6M)-O_ckd3_hp" coords="254,721,21" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-E_ckd4_hp" coords="824,333,23" href="" target="" /><area shape="circle" alt="" title="E_ckd4_hp-(L3M)-O_ckd4_hp" coords="808,379,21" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd4_hp" coords="870,460,22" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp" coords="795,451,23" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-O_ckd4_hp" coords="713,516,22" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_ckd4_hp" coords="803,563,22" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-H_akf_ckd4_hp" coords="878,630,19" href="" target="" /><area shape="circle" alt="" title="H_akf_ckd4_hp-(L3M)-H_akf_ckd4_hp" coords="914,671,18" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd3_hp" coords="554,573,20" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_hp-(L3M)-O_ckd3_hp" coords="537,624,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-H_ckd3_hp" coords="721,775,19" href="" target="" /><area shape="circle" alt="" title="H_ckd3_hp-(L3M)-H_ckd3_hp" coords="691,724,20" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_hp-(L3M)-H_ckd3_hp" coords="625,643,18" href="" target="" /><area shape="circle" alt="" title="H_ckd3_hp-(L3M)-O_ckd3_hp" coords="593,712,21" href="" target="" /><area shape="circle" alt="" title="H_ckd3_hp-(3-6M)-O_ckd3_hp" coords="532,679,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(L3M)-H_ckd3_hp" coords="630,789,22" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-H_ckd3_hp" coords="563,833,19" href="" target="" /><area shape="circle" alt="" title="H_ckd3_hp-(A6M)-O_ckd3_hp" coords="512,779,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_NSAID-(3-6M)-O_ckd3_hp" coords="481,707,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_ckd3_hp_NSAID" coords="449,766,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp_ACEI" coords="468,902,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_ckd3_hp_ACEI" coords="381,911,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_ACEI-(A6M)-O_ckd3_hp" coords="431,827,17" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp_LD" coords="361,791,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_LD-(3-6M)-O_ckd3_hp" coords="431,701,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp_LD-(3-6M)-O_ckd3_hp_LD" coords="217,966,21" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(L3M)-O_ckd3_hp_ACEi" coords="221,857,22" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_ckd3_hp_LD" coords="283,887,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_akf_ckd4_hp" coords="350,726,20" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(L3M)-O_ckd3_hp" coords="389,666,19" href="" target="" />
+        </map>
+        <div>
+            Patients who started with CKD3 and hypertension: cluster 3
+        </div>
+        <img src="static/images/ckd3_hp_t3map.png" alt="aaa" usemap="#ckd3_hp_t3">
+        <map name="ckd3_hp_t3"><area shape="circle" alt="" title="H_ckd4_hp-(L3M)-O_ckd4_hp" coords="412,78,37" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-H_ckd4_hp" coords="417,204,39" href="" target="" /><area shape="circle" alt="" title="E_ckd4_hp-(L3M)-O_ckd4_hp" coords="529,350,46" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-E_ckd4_hp" coords="676,313,44" href="" target="" /><area shape="circle" alt="" title="E_ckd4_hp-(3-6M)-O_ckd5_hp" coords="837,331,41" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-O_ckd4_hp" coords="837,331,41" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp_LD" coords="248,350,40" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_LD-(3-6M)-O_ckd4_hp" coords="369,418,43" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp" coords="452,571,52" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(L3M)-O_ckd4_hp" coords="304,503,42" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(A6M)-O_ckd4_hp" coords="285,612,39" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(3-6M)-O_ckd4_hp" coords="609,617,38" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(L3M)-O_ckd4_hp" coords="556,734,42" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(L3M)-O_ckd3_hp" coords="191,695,40" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd3_hp" coords="184,842,41" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd4_hp" coords="312,762,52" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(A6M)-O_ckd3_hp" coords="341,940,42" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp" coords="508,938,45" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(L3M)-O_ckd3_hp" coords="467,811,41" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-O_ckd4_hp" coords="675,491,47" href="" target="" />
+        </map>
+ -->
+        <!-- <div>
+            Patients who started with CKD4 and diabetes: group 1
+        </div>
+        <img src="./new_files/ckd4_dm_t2map.png" alt="aaa" usemap="#ckd4_dm_t2">
+        <div>
+            Patients who started with CKD4 and diabetes: group 2
+        </div>
+        <img src="./new_files/ckd4_dm_t3map.png" alt="aaa" usemap="#ckd4_dm_t3"> -->
+        <!-- <div> -->
+        <!-- <div>
+            Patients who started with CKD3 and diabetes: pathway 1
+        </div>
+        <img src="static/images/ckd3_dm_t3_vl2.png" alt="aaa" usemap="#ckd3_dm_t3_vl2">
+        <map name="ckd3_dm_t3_vl2"><area shape="circle" alt="" title="O_ckd3_dm_hp-(3-6M)-O_akf_ckd3_dm_hp" coords="322,195,18" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_dm_hp-(L3M)-O_akf_ckd3_dm_hp" coords="457,161,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(A6M)-O_akf_ckd3_dm_hp" coords="399,224,18" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_dm_hp-(3-6M)-O_akf_ckd3_dm_hp" coords="510,254,22" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(L3M)-O_akf_ckd3_dm_hp" coords="429,285,20" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_dm_hp-(3-6M)-O_ckd3_dm_hp" coords="477,343,18" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp" coords="365,328,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-O_akf_ckd3_dm_hp" coords="273,316,19" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_dm_hp-(A6M)-O_ckd3_dm_hp" coords="472,420,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(3-6M)-O_ckd2_dm_hp" coords="743,388,18" href="" target="" /><area shape="circle" alt="" title="O_ckd2_dm_hp-(A6M)-O_ckd3_dm_hp" coords="680,435,21" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(A6M)-O_ckd3_dm_hp" coords="585,511,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(3-6M)-O_ckd4_dm_hp" coords="971,601,21" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_ckd4_dm_hp" coords="870,551,18" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="815,500,18" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_ckd3_dm_hp" coords="750,520,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_statins-(A6M)-O_ckd3_dm_hp" coords="655,507,17" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp_ACEi" coords="680,718,21" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(A6M)-O_ckd3_dm_hp_ACEi" coords="711,659,17" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_ACEi-(A6M)-O_ckd3_dm_hp" coords="657,628,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_ACEi-(3-6M)-O_ckd3_dm_hp" coords="542,602,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(3-6M)-O_ckd3_dm_hp_LoopDir" coords="545,836,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_LoopDir-(3-6M)-O_ckd3_dm_hp" coords="496,731,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-H_akf_ckd3_dm_hp" coords="392,858,19" href="" target="" /><area shape="circle" alt="" title="H_akf_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp" coords="392,774,20" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp" coords="420,690,19" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(3-6M)-O_ckd3_dm_hp" coords="381,545,21" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(3-6M)-H_ckd3_dm_hp" coords="253,800,20" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp" coords="267,708,19" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(L3M)-H_ckd3_dm_hp" coords="175,774,19" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(A6M)-O_ckd3_dm_hp" coords="335,650,20" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(3-6M)-O_ckd3_dm_hp" coords="276,607,18" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(L3M)-H_akf_ckd3_dm_hp" coords="64,724,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-H_ckd3_dm_hp" coords="141,687,23" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp-(3-6M)-O_ckd3_dm_hp" coords="276,603,16" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(A6M)-O_ckd4_dm_hp" coords="81,586,22" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-O_ckd3_dm_hp" coords="156,592,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_ARB-(3-6M)-O_ckd3_dm_hp" coords="299,538,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(A6M)-O_ckd3_dm_hp_LoopDir" coords="157,443,18" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_LoopDir-(A6M)-O_ckd3_dm_hp" coords="247,486,17" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_LoopDir-(L3M)-O_akf_ckd3_dm_hp_LoopDir" coords="323,486,20" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_akf_ckd3_dm_hp" coords="376,471,19" href="" target="" />
+        </map> -->
+
+
+        <div>
+            Patients who started with CKD3 and diabetes: 
+        </div>
+        <img src="static/images/ckd3_dm_t4_vl2.png" alt="aaa" usemap="#ckd3_dm_t4_vl2">
+        <map name="ckd3_dm_t4_vl2"><area shape="circle" alt="" title="H_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp_LoopDir" coords="743,97,29" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_LoopDir-(L3M)-O_ckd4_dm_hp_LoopDir" coords="867,205,35" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_LoopDir-(3-6M)-O_ckd4_dm_hp_LoopDir" coords="954,336,27" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="455,314,29" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-E_ckd4_dm_hp" coords="447,412,32" href="" target="" /><area shape="circle" alt="" title="E_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="568,410,27" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-E_ckd4_dm_hp_refferal" coords="756,423,30" href="" target="" /><area shape="circle" alt="" title="E_ckd4_dm_hp_referral-(L3M)-O_ckd4_dm_hp" coords="677,479,31" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_-(3-6M)-O_ckd4_dm_hp" coords="574,528,33" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp_-(L3M)-O_ckd4_dm_hp" coords="638,605,30" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_-(3-6M)-O_ckd4_dm_hp" coords="440,552,29" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_-(L3M)-H_ckd3_dm_hp" coords="734,709,28" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp_-(L3M)-O_ckd4_dm_hp" coords="712,798,28" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_-(L3M)-O_ckd4_dm_hp" coords="616,792,32" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_-(L3M)-H_akf_ckd4_dm_hp" coords="643,927,29" href="" target="" /><area shape="circle" alt="" title="O_ckd5_dm_hp_-(L3M)-O_ckd5_dm_hp" coords="417,899,34" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_-(L3M)-O_ckd5_dm_hp" coords="463,796,29" href="" target="" /><area shape="circle" alt="" title="H_ckd3_dm_hp_-(L3M)-O_ckd3_dm_hp" coords="250,691,25" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_-(L3M)-O_ckd3_dm_hp" coords="132,628,26" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_-(A6M)-O_ckd3_dm_hp" coords="158,486,29" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_-(3-6M)-O_ckd3_dm_hp" coords="261,578,39" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_-(L3M)-O_ckd3_dm_hp" coords="71,336,27" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp_-(A6M)-O_ckd4_dm_hp" coords="258,363,32" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_-(L3M)-H_ckd4_dm_hp" coords="246,199,30" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp_-(L3M)-H_akf_ckd4_dm_hp" coords="238,99,28" href="" target="" />       
+        </map>
+        <!-- <div>
+            Patients who started with CKD3 and diabetes: pathway 3
+        </div>
+        <img src="static/images/ckd3_dm_t5_vl2.png" alt="aaa" usemap="#ckd3_dm_t5">
+        <map name="ckd3_dm_t5"><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp" coords="342,130,56" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd3_dm_hp-(L3M)-O_ckd3_dm_hp" coords="192,254,50" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(L3M)-O_ckd4_dm_hp" coords="348,310,56" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_ckd4_dm_hp" coords="503,537,53" href="" target="" /><area shape="circle" alt="" title="O_ckd3_dm_hp-(A6M)-O_ckd4_dm_hp" coords="643,155,51" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="577,323,53" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(A6M)-O_ckd4_dm_hp" coords="85,653,57" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-E_ckd4_dm_hp" coords="228,574,50" href="" target="" /><area shape="circle" alt="" title="E_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="362,500,52" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_akf_ckd4_dm_hp" coords="922,340,50" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp-(L3M)-O_akf_ckd4_dm_hp" coords="942,572,48" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="777,487,53" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp-(L3M)-H_ckd4_dm_hp" coords="685,897,51" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-H_ckd4_dm_hp" coords="508,822,52" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-H_ckd4_dm_hp" coords="818,758,50" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="657,709,57" href="" target="" />
+        </map> -->
+        <!-- </div>
+            Patients who started with CKD4 and hypertension: cluster 2
+        </div>
+        <img src="static/images/ckd4_hp_t2map.png" alt="aaa" usemap="#ckd4_hp_t2">
+        <map name="ckd4_hp_t2"><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-O_ckd4_hp-sobi" coords="71,80,26" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(A6M)-O_ckd3_hp" coords="248,88,27" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd3_hp" coords="366,71,30" href="" target="" /><area shape="circle" alt="" title="O_ckd3_hp-(3-6M)-O_ckd4_hp" coords="330,144,30" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp-(L3M)-O_ckd3_hp" coords="76,232,34" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-H_ckd4_hp" coords="209,309,35" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-H_ckd4_hp" coords="415,201,31" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-H_akf_ckd4_hp" coords="664,62,32" href="" target="" /><area shape="circle" alt="" title="H_akf_ckd4_hp-(L3M)-O_ckd4_hp" coords="615,139,31" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-O_ckd4_hp" coords="544,238,36" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-O_ckd5_hp" coords="788,168,30" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp-(3-6M)-O_ckd4_hp" coords="336,313,27" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp-(A6M)-H_ckd4_hp" coords="405,356,25" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(A6M)-H_ckd4_hp" coords="331,433,34" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-H_ckd4_hp" coords="121,406,28" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp-(L3M)-H_ckd4_hp" coords="128,517,30" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp-(L3M)-O_ckd4_hp" coords="215,461,31" href="" target="" /><area shape="circle" alt="" title="E_ckd4_hp-(L3M)-O_ckd4_hp" coords="502,345,27" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(L3M)-E_ckd4_hp" coords="462,429,30" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_akf_ckd4_hp" coords="697,348,27" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(L3M)-O_ckd4_hp" coords="609,379,28" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp-(L3M)-O_akf_ckd4_hp" coords="659,469,24" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(L3M)-O_akf_ckd4_hp" coords="673,563,28" href="" target="" /><area shape="circle" alt="" title="O_akf_ckd4_hp-(3-6M)-O_ckd4_hp" coords="596,616,32" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(A6M)-O_ckd4_hp" coords="260,673,33" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(A6M)-O_ckd4_hp" coords="260,673,33" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp" coords="468,617,37" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_LD-(3-6M)-O_ckd4_hp" coords="450,735,30" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp_LD" coords="404,836,30" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_LD-(3-6M)-O_ckd4_hp_LD" coords="459,923,29" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_LD-(L3M)-H_ckd4_hp_LD" coords="546,964,26" href="" target="" /><area shape="circle" alt="" title="H_ckd5_hp-(L3M)-O_ckd5_hp" coords="953,319,29" href="" target="" /><area shape="circle" alt="" title="o_ckd5_hp-(L3M)-O_ckd5_hp" coords="948,428,26" href="" target="" /><area shape="circle" alt="" title="o_ckd5_hp-(3-6M)-O_ckd5_hp" coords="945,547,28" href="" target="" /><area shape="circle" alt="" title="E_ckd4_hp-(3-6M)-O_ckd4_hp" coords="532,514,32" href="" target="" />  
+        </map>
+        <div>
+            Patients who started with CKD4 and hypertension: cluster 3
+        </div>
+        <img src="static/images/ckd4_hp_t3map.png" alt="aaa" usemap="#ckd4_hp_t3">
+        <map name="ckd4_hp_t3"><area shape="circle" alt="" title="O_ckd4_hp_SB-(L3M)-O_ckd4_hp_SB" coords="571,191,81" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_SB-(L3M)-E_ckd4_hp_SB" coords="826,210,68" href="" target="" /><area shape="circle" alt="" title="E_ckd4_hp_SB-(L3M)-O_ckd4_hp_SB" coords="904,446,68" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_SB-(L3M)-H_ckd4_hp_SB" coords="905,675,69" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp_SB-(L3M)-H_ckd4_hp_SB" coords="772,858,60" href="" target="" /><area shape="circle" alt="" title="H_ckd4_hp_SB-(L3M)-O_ckd4_hp_SB" coords="650,682,66" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_SB-(3-6M)-O_ckd4_hp_SB" coords="598,486,80" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp_SB-(A6M)-O_ckd4_hp_SB" coords="343,423,77" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp_SB" coords="319,663,71" href="" target="" /><area shape="circle" alt="" title="O_ckd4_hp-(3-6M)-O_ckd4_hp" coords="94,696,62" href="" target="" />
+        </map>
+        <div>
+            Patients who started with CKD4 and diabetes: cluster 4
+        </div>
+        <img src="static/images/ckd4_dm_t4map.png" alt="aaa" usemap="#ckd4_dm_t4">
+        <map name="ckd4_dm_t4"><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp" coords="654,784,58" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_ckd4_dm_hp" coords="470,814,76" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(3-6M)-O_ckd4_dm_hp_LD" coords="283,603,69" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp_LD-(3-6M)-O_ckd4_dm_hp_LD" coords="103,655,65" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp_LD" coords="188,412,80" href="" target="" /><area shape="circle" alt="" title="O_ckd4_dm_hp-(L3M)-H_ckd4_dm_hp_LD" coords="440,470,78" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp-(L3M)-O_ckd4_dm_hp_LD" coords="608,542,60" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp-(L3M)-H_ckd4_dm_hp_LD" coords="481,221,71" href="" target="" /><area shape="circle" alt="" title="H_ckd4_dm_hp-(A6M)-H_ckd6_dm_hp_LD" coords="719,221,61" href="" target="" /><area shape="circle" alt="" title="H_ckd6_dm_hp-(L3M)-H_ckd6_dm_hp_LD" coords="914,352,64" href="" target="" />
+        </map>  -->
+
+
+</div>
+
+
+<script src="static/js/sigma.min.js"></script>
+<script src="static/js/sigma.parseGexf.js"></script>
+<script src="static/js/sigma.forceatlas2.js"></script>
+<script type="text/javascript">
+
+    console.log('doing-a')
+    function init() {
+        // Instanciate sigma.js and customize rendering :
+        console.log('doing')
+        var sigInst = sigma.init(document.getElementById('sigma-example')).drawingProperties({
+            defaultLabelColor: '#fffff',
+            defaultLabelSize: 14,
+            defaultLabelBGColor: '#fff',
+            defaultLabelHoverColor: '#000',
+            defaultEdgeColor: "#FF0000",
+            defaultNodeColor: "#FF0000",
+            labelThreshold: 0,
+            defaultEdgeArrow: 'target',
+            // edgeColor: 'source',
+            defaultEdgeType: 'line'
+        }).graphProperties({
+            minNodeSize: 0.5,
+            maxNodeSize: 5,
+            minEdgeSize: 2,
+            maxEdgeSize: 5,
+            sideMargin: 50
+        }).mouseProperties({
+            maxRatio: 2
+        });
+
+        // Parse a GEXF encoded file to fill the graph
+        // (requires "sigma.parseGexf.js" to be included)
+        sigInst.parseGexf('static/g.gexf');
+
+
+        var isRunning = false;
+        document.getElementById('stop-layout').addEventListener('click', function () {
+            if (isRunning) {
+                isRunning = false;
+                sigInst.stopForceAtlas2();
+                document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
+            } else {
+                isRunning = true;
+                sigInst.startForceAtlas2();
+                document.getElementById('stop-layout').childNodes[0].nodeValue = 'Stop Layout';
+            }
+        }, true);
+
+
+        // Draw the graph :
+        sigInst.draw();
+    }
+
+    if (document.addEventListener) {
+        console.log('a')
+        document.addEventListener("DOMContentLoaded", init, false);
+    } else {
+        window.onload = init;
+    }
+
+
+</script>
+

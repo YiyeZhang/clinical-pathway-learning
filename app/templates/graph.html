@@ -1,0 +1,85 @@
+{% include 'header.html' %}
+<html>
+
+<head>
+<script src="../static/js/sigma.min.js"></script>
+<script src="../static/js/sigma.parseGexf.js"></script>
+<script src="../static/js/sigma.forceatlas2.js"></script>
+    <script type="text/javascript">
+
+ 
+function init() {
+  // Instanciate sigma.js and customize rendering :
+  var sigInst = sigma.init(document.getElementById('sigma-example')).drawingProperties({
+    defaultLabelColor: '#fffff',
+    defaultLabelSize: 14,
+    defaultLabelBGColor: '#fff',
+    defaultLabelHoverColor: '#000',
+    defaultEdgeColor: "#FF0000",
+    defaultNodeColor: "#FF0000",
+    labelThreshold: 0,
+    defaultEdgeArrow: 'target',
+    // edgeColor: 'source',
+    defaultEdgeType: 'line'
+  }).graphProperties({
+    minNodeSize: 0.5,
+    maxNodeSize: 3,
+    minEdgeSize: 2,
+    maxEdgeSize: 5,
+    sideMargin: 50
+  }).mouseProperties({
+    maxRatio: 2
+  });
+
+  // Parse a GEXF encoded file to fill the graph
+  // (requires "sigma.parseGexf.js" to be included)
+  sigInst.parseGexf('static/g.gexf');
+
+
+  var isRunning = false;
+  document.getElementById('stop-layout').addEventListener('click',function(){
+    if(isRunning){
+      isRunning = false;
+      sigInst.stopForceAtlas2();
+      document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
+    }else{
+      isRunning = true;
+      sigInst.startForceAtlas2();
+      document.getElementById('stop-layout').childNodes[0].nodeValue = 'Stop Layout';
+    }
+  },true);
+
+
+
+
+  // Draw the graph :
+  sigInst.draw();
+}
+
+if (document.addEventListener) {
+  document.addEventListener("DOMContentLoaded", init, false);
+} else {
+  window.onload = init;
+}
+
+
+</script>
+</head>
+<body>
+<INPUT class=button Type="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+<input class=button type="button" value="See Node Details" onClick="parent.location='/nodedesc'" />
+<button class="button" id="stop-layout">Start layout</button>
+<div > 
+  <p>
+</div>
+<div id="container">
+
+    <div id="sigma-example" width="570px" height="500px">
+
+    </div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% include 'header.html' %}
+<html>
+<FORM><INPUT class=button Type="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+<input class=button type="button" value="Go Back to Graph" onClick="parent.location='/graph'" />
+<input class=button type="button" value="See VVNode Details" onClick="parent.location='/VVdesc'" />
+
+</FORM> 
+<div>Node Details</div>
+<div id='info'>
+       
+        <table id="resultTable2" class="display">
+            <thead>
+            <tr>
+                <th>visit ID</th>
+                <th>visit type</th>
+                <th>diagnosis</th>
+                <th>procedure</th>
+                <th>medication</th>
+                
+            </tr>
+            </thead>
+            {% for r in nodedesclist %}
+            <tr class="tttt">
+                <td>
+                    <div> {{r.name}}</div>
+                </td>
+                 <td>
+                    <div> {{r.type}}</div>
+                </td>
+                 <td>
+                    <!-- <div> {% for d in r.diagnosis%} {{d}}{%endfor%}</div> -->
+                    <div>{{r.diagnosis}}</div>
+                </td>
+                 <td>
+                    <div> {{r.proc}}</div>
+                </td>
+                 <td>
+                    <div> {% for d in r.med%} {{d}} .{%endfor%} </div>
+                </td>
+             
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+</div>
+</html>

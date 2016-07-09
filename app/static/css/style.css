@@ -1,0 +1,38 @@
+body {
+    font: 100% "Trebuchet MS", sans-serif;
+    margin: 50px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+}
+
+.header {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 2em 0 1em;
+    clear: both;
+}
+
+.tttt:hover {
+    background-color: hsl(0, 50%, 90%);
+    cursor: pointer;
+}
+
+.navigate {
+    margin-top: 50px;
+}
+
+#container {
+    background: #ffe2e2;
+    height: 700px;
+    width: 900px;
+}
+
+#sigma-example {
+
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

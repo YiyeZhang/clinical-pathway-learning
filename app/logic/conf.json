@@ -1,0 +1,7 @@
+{
+  "database" : "xxx",
+  "dbuser"   : "xxx",
+  "dbpass"   : "+=",
+  "dbschema" : "xxx"
+
+}

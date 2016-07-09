@@ -1,0 +1,237 @@
+{% include 'header.html' %}
+
+
+<div class="container">
+
+    <form action="/step2" method="POST" >
+
+
+        <h2>Step 1: Enter Data</h2>
+
+        <!-- <div>
+            First please enter your diagnoses from your visits.
+        </div>
+        <div>
+            1. Please enter the probability level you wish to have between one event to the next:
+        </div>
+
+        
+        <select name="prob">
+            <option value=0.1>0.1</option>
+            <option value=0.3>0.3</option>
+            <option value=0.5>0.5</option>
+            <option value=0.7>0.7</option>
+            <option value=0.9>0.9</option>
+            <option value=1.0>1.0</option>
+        </select> -->
+        <div>
+            1.Please choose your gender:
+        </div>
+            <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            
+        </select>
+        </p>
+        <div>
+            2. Please enter your age:
+        <input type="text" name="age" value="78"><br>    
+        <div>
+        </p>
+            3. Please enter your weight:
+        <input type="text" name="weight" value="78"><br>
+        <div>
+        </p>
+            4.1 Please enter your systolic (top number) blood pressure:
+        <select name="SBP0">
+            <option value=""></option>
+            <option value="below 120">below 120</option>
+            <option value="120-139">120-139</option>
+            <option value="140-159">140-159</option>
+            <option value="160 and more">160 and more</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <select name="SBP1">
+            <option value=""></option>
+            <option value="below 120">below 120</option>
+            <option value="120-139">120-139</option>
+            <option value="140-159">140-159</option>
+            <option value="160 and more">160 and more</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <p>
+            4.2 Please enter your diastolic (bottom number) blood pressure:
+        <select name="DBP0">
+            <option value=""></option>
+            <option value="below 80">below 80</option>
+            <option value="80-99">80-99</option>
+            <option value="90-99">90-99</option>
+            <option value="100 and more">100 and more</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <select name="DBP1">
+            <option value=""></option>
+            <option value="below 80">below 80</option>
+            <option value="80-99">80-99</option>
+            <option value="90-99">90-99</option>
+            <option value="100 and more">100 and more</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <div>
+        <!-- </p>
+            5.Please enter the ICD9 code(s) for your diagnosis. Example: 401.9,592.0 (without space)
+        </div>
+            <input type="text" name="diaglist0" value="401.9,592.0"><br>
+            <input type="text" name="diaglist1" value="401.9,592.0"><br>
+            <input type="text" name="diaglist2"><br>
+            <input type="text" name="diaglist3"><br> -->
+        <p>
+            6. Please select the diagnosis that match your condition(s).
+        <select name="ICD0">
+            <option value=""></option>
+            <option value="Chronic Kidney Disease Stage 1">Chronic Kidney Disease Stage 1</option>
+            <option value="Chronic Kidney Disease Stage 2">Chronic Kidney Disease Stage 2</option>
+            <option value="Chronic Kidney Disease Stage 3">Chronic Kidney Disease Stage 3</option>
+            <option value="Chronic Kidney Disease Stage 4">Chronic Kidney Disease Stage 4</option>
+            <option value="Chronic Kidney Disease Stage 5">Chronic Kidney Disease Stage 5</option>
+            <option value="Hypertesion">Hypertesion (401.xx or 405.xx) </option>
+            <option value="Diabetes">Diabetes (250.xx)</option>
+            <option value="Acute Kidney Failure">Acute Kidney Failure (584.xx)</option>
+            <option value="End Stage Renal Disease">End Stage Renal Disease</option>
+            <option value="Other">Other</option>
+        </select>   
+        <select name="ICD1">
+            <option value=""></option>
+            <option value="Chronic Kidney Disease Stage 1">Chronic Kidney Disease Stage 1</option>
+            <option value="Chronic Kidney Disease Stage 2">Chronic Kidney Disease Stage 2</option>
+            <option value="Chronic Kidney Disease Stage 3">Chronic Kidney Disease Stage 3</option>
+            <option value="Chronic Kidney Disease Stage 4">Chronic Kidney Disease Stage 4</option>
+            <option value="Chronic Kidney Disease Stage 5">Chronic Kidney Disease Stage 5</option>
+            <option value="Hypertesion">Hypertesion (401.xx or 405.xx) </option>
+            <option value="Diabetes">Diabetes (250.xx)</option>
+            <option value="Acute Kidney Failure">Acute Kidney Failure (584.xx)</option>
+            <option value="End Stage Renal Disease">End Stage Renal Disease</option>
+            <option value="Other">Other</option>
+        </select>   
+        <p>
+            6. Please select your GFR range.
+        <select name="GFR0">
+            <option value=""></option>
+            <option value="below 15">below 15</option>
+            <option value="15-29">15-29</option>
+            <option value="30-59">30-59</option>
+            <option value="60-89">60-89</option>
+            <option value="90 and above">90 and above</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="GFR1">
+            <option value=""></option>
+            <option value="below 15">below 15</option>
+            <option value="15-29">15-29</option>
+            <option value="30-59">30-59</option>
+            <option value="60-89">60-89</option>
+            <option value="90 and above">90 and above</option>
+            <option value="don't know">don't know</option>
+        </select> 
+        <p>
+            7. Please select your blood hemoglobin range.
+        <select name="hemo0">
+            <option value=""></option>
+            <option value="12 and below">12 and below</option>
+            <option value="above 12">above 12</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="hemo1">
+            <option value=""></option>
+            <option value="12 and below">12 and below</option>
+            <option value="above 12">above 12</option>
+            <option value="don't know">don't know</option>
+        </select> 
+        <p>
+            8. Please select your blood calcium range.
+        <select name="cal0">
+            <option value=""></option>
+            <option value="below 8.8">below 8.8</option>
+            <option value="8.8-9.5">8.8-9.5</option>
+            <option value="above 9.5">above 9.5</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="cal1">
+            <option value=""></option>
+            <option value="below 8.8">below 8.8</option>
+            <option value="8.8-9.5">8.8-9.5</option>
+            <option value="above 9.5">above 9.5</option>
+            <option value="don't know">don't know</option>
+        </select> 
+        <p>
+            9. Please select your blood albumin range.
+        <select name="alb0">
+            <option value=""></option>
+            <option value="below 3.6">below 3.6</option>
+            <option value="3.6-5.0">3.6-5.0</option>
+            <option value="above 5.0">above 5.0</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="alb1">
+            <option value=""></option>
+            <option value="below 3.6">below 3.6</option>
+            <option value="3.6-5.0">3.6-5.0</option>
+            <option value="above 5.0">above 5.0</option>
+            <option value="don't know">don't know</option>
+        </select> 
+        <p>
+            10. Please select your blood phosphorus range.
+        <select name="pho0">
+            <option value=""></option>
+            <option value="4.6 and below">4.6 and below</option>
+            <option value="4.6-5.5">4.6-5.5</option>
+            <option value="5.5 and above">5.5 and above</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="pho1">
+            <option value=""></option>
+            <option value="4.6 and below">4.6 and below</option>
+            <option value="4.6-5.5">4.6-5.5</option>
+            <option value="5.5 and above">5.5 and above</option>
+            <option value="don't know">don't know</option>
+        </select> 
+        <p>
+            11. Please select your blood CO2 range.
+        <select name="CO20">
+            <option value=""></option>
+            <option value="below 23">below 23</option>
+            <option value="23-29">23-29</option>
+            <option value="above 29">above 5.0</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="CO21">
+            <option value=""></option>
+            <option value="below 23">below 23</option>
+            <option value="23-29">23-29</option>
+            <option value="above 29">above 5.0</option>
+            <option value="don't know">don't know</option>
+        </select> 
+        <p>
+            12. Please select your creatinine range.
+        <select name="ACR0">
+            <option value=""></option>
+            <option value="below 0.5">below 0.5</option>
+            <option value="0.5-1.2">0.5-1.2</option>
+            <option value="above 1.2">above 1.2</option>
+            <option value="don't know">don't know</option>
+        </select>   
+        <select name="ACR1">
+            <option value=""></option>
+            <option value="below 0.5">below 0.5</option>
+            <option value="0.5-1.2">0.5-1.2</option>
+            <option value="above 1.2">above 1.2</option>
+            <option value="don't know">don't know</option>
+        </select> 
+
+        <div class="navigate">
+        <INPUT class="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+        <input class="button" type="Submit" value="Submit"></p>
+        </div>
+    </form>
+</div>
+</html>

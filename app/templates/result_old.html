@@ -1,0 +1,59 @@
+{% include 'header.html' %}
+<html>
+
+
+<FORM><INPUT class=button Type="button" VALUE="Go Back" onClick="history.go(-1);return true;">
+<input class=button type="button" value="Graph it" onClick="parent.location='/graph'" />
+<input class=button type="button" value="See Node Details" onClick="parent.location='/nodedesc'" />
+<input class=button type="button" value="See VVNode Details" onClick="parent.location='/VVdesc'" />
+</FORM> 
+
+<!-- <div>Optimization Result</div> -->
+<div id='info'>
+        Number of patients who matched your profile is : {{nummatchpt}} <br>
+        
+    </div>
+<div id="container">
+    <div id="demo">
+        <table id="resultTable" class="display">
+            <thead>
+            <tr>
+                <th>source</th>
+                <th>target</th>
+                <th>weight</th>
+                <th>count</th>
+                <th>count_source</th>
+                <th>count_target</th>
+                
+            </tr>
+            </thead>
+            {% for r in results_list %}
+            <tr class="tttt">
+                <td>
+                    <div> {{r.source}}</div>
+                </td>
+                 <td>
+                    <div> {{r.target}}</div>
+                </td>
+                 <td>
+                    <div> {{r.weight}}</div>
+                </td>
+                <td>
+                    <div> {{r.count}}</div>
+                </td>
+                <td>
+                    <div> {{r.count_source}}</div>
+                </td>
+                <td>
+                    <div> {{r.count_target}}</div>
+                </td>
+             
+                
+            </tr>
+            {% endfor %}
+
+        </table>
+   
+    </div>
+</div>
+</html>

@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+
+
+<div class=container>
+
+
+    <div> showing one result detail:</div>
+    <div>
+        <table id="detailTable" class="display">
+            <thead><th>sid</th><th>orderset</th><th>item</th></thead>
+
+            {% for k1, v1 in result.items() recursive %}
+            {% for k2, v2 in v1.items() recursive %}
+            {% for i in v2 %}
+           <tr>
+               <td> {{k1}}</td><td>{{k2}}</td><td>{{i}}</td>
+           </tr>
+            {% endfor %}
+            {% endfor %}
+            {% endfor %}
+        </table>
+    </div>
+
+    <div><INPUT class="button" VALUE="Go Back" onClick="history.go(-1);return true;"></div>
+
+
+
+
+</div>
