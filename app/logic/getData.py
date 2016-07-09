@@ -1,3 +1,6 @@
+__author__ = "Yiye Zhang"
+__date__="07/09/2016"
+
 from getV import Structure
 from getSample import Sample
 from numpy import *
