@@ -224,7 +224,7 @@ def VVdesc():
 
 @app.route('/graph')
 def graph():
-    fh = open ('data/post2nd/data_out2.json','r')
+    fh = open ('data/data_out2.json','r')
     data = json.load(fh)
     nodelist = set()
     for d in data:

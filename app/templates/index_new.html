@@ -1,21 +1,20 @@
 <!doctype html>
 <html ng-app="ckdApp">
 <head>
-    <script src="{{ url_for('static', filename='js/jquery-1.9.1.js') }}"></script>
+    <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
     <script
-            src="{{ url_for('static', filename='js/lib/angular-1.2.14/angular.js') }}"></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.14/angular.min.js"></script>
     <script
-            src="{{ url_for('static', filename='js/lib/angular-1.2.14/angular-route.js') }}"></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.14/angular-route.min.js"></script>
     <script
-            src="{{ url_for('static', filename='js/lib/angular-1.2.14/angular-resource.js') }}"></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.14/angular-resource.min.js"></script>
     <script src="{{ url_for('static', filename='js/ckd-app.js') }}"></script>
     <script src="{{ url_for('static', filename='js/ckd-services.js') }}"></script>
     <script
             src="{{ url_for('static', filename='js/ckd-controllers.js') }}"></script>
-    <script src="
-    {{ url_for('static', filename='js/lib/bootstrap-3.1.1/bootstrap.js') }}"></script>
-
-    <link href="{{ url_for('static', filename='css/bootstrap-3.1.1/bootstrap.css') }}"
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
           rel="stylesheet">
 
 
