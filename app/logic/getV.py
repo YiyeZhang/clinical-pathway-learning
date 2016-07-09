@@ -44,8 +44,7 @@ class Structure:
             if diaglist_distinct[s] != '':
                 nodedesc['D' + str(s)] = diaglist_distinct[s]
 
-        with open("/Users/yiyezhang/github/clinical-pathway-learning/data/nodedesc.json",
-                  'w') as outfile:
+        with open("data/nodedesc.json",'w') as outfile:
             json.dump(nodedesc, outfile)
 
         return nodedesc
@@ -119,7 +118,7 @@ class Structure:
                 Vdesc['V'+str(t)]=d_visitlist[t]
 
 
-        with open("/Users/yiyezhang/github/clinical-pathway-learning/data/Vdesc.json", 'w') as outfile:
+        with open("data/Vdesc.json", 'w') as outfile:
             json.dump(Vdesc, outfile)
 
         return Vdesc

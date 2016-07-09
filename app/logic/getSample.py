@@ -5,7 +5,7 @@ from sklearn import cross_validation
 class Sample:
     def getSample(self):
         sample = list()
-        cr = csv.reader(open("/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/postDefense/HMMsample.csv", "rb"))
+        cr = csv.reader(open("data/patient_sample.csv", "rb"))
         for row in cr:
             sample.append(row)
 
@@ -13,8 +13,7 @@ class Sample:
 
     def getSubgroup(self, group):
         s = list()
-        sample = open(
-            '/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/postDefense/HMM_subgroup.csv','rU')
+        sample = open('data/patient_subgroup.csv','rU')
         sample_f = csv.reader(sample, delimiter=',')
 
         for row in sample_f:

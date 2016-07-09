@@ -31,7 +31,7 @@ def getVV(result):
             VVdesc['VV'+str(t)]=d_VVlist[t]
        
     
-    with open("/Users/yiyezhang/github/clinical-pathway-learning/data/VVdesc.json", 'w') as outfile:
+    with open("data/VVdesc.json", 'w') as outfile:
         json.dump(VVdesc, outfile)  
     
     
