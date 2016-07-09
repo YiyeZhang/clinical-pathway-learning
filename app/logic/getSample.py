@@ -6,7 +6,6 @@ class Sample:
     def getSample(self):
         sample = list()
         cr = csv.reader(open("/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/postDefense/HMMsample.csv", "rb"))
-        # cr = csv.reader(open("/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/Diuretics/transplant.csv","rb"))
         for row in cr:
             sample.append(row)
 

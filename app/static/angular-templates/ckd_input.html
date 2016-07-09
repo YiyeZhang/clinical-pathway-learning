@@ -2,136 +2,26 @@
     <div class="col-md-12">
         <h2>&nbsp;</h2>
         <h2>
-            Background Matching by Condition and Laboratory Results
+            Input Data (.json only)
         </h2>
         
         <form action="/submit" method="POST">
 
             <div class="panel panel-info">
-                <!-- Default panel contents -->
-                <!-- <div class="panel-heading">Your general information:
-                    {{p.gender}},
-                    {{p.age}} years old, weight {{p.weight}} lbs
-                </div> -->
+                
                 <div class="panel-body">
-                    <label>1. Your gender</label>
 
-                    <div class="radio">
-
-                        <input name="gender" type="radio" ng-model="p.gender"
-                               value="Male"
-                               checked> Male
-                    </div>
+                    </label>Path to file (try the sample data by entering this path: data/sample_data.json)</label>
                     <div>
-                        <input name="gender" type="radio" ng-model="p.gender"
-                               value="Female"> Female
+                    <input type="text" name="path" ng-model="p.path" value="33"/>
                     </div>
-                    
-                    </label>2. Your age:</label>
+                    </label>Minimum number of time points</label>
                     <div>
-                    <input type="text" name="age" ng-model="p.age" value="33"/>
+                    <input type="text" name="numvisit" ng-model="p.numvisit" value="33"/>
                     </div>
-                    <!-- 3. Your Weight :
-                    <input type="text" name="weight" ng-model="p.weight"/> -->
-
                 </div>
 
-                <div class="panel-heading">Please enter the number of visits you had: <!-- {{p.visit_count}} -->
-                </div>
-                <div class="panel-body">
-                    <input name="visit_count" type="text"
-                           ng-model="p.visit_count"
-                           ng-change="change()"/>
-                </div>
-
-                <div ng-repeat="a in p.visits_info track by $index">
-                    <div class="row">
-                        <div class="panel-heading"># {{$index+1}} visit
-                        </div>
-                        <div class="panel-body">
-                            <div class="col-md-6 col-md-offset-1">
-                                <div class="row">
-                                    Diagnosis(multiple choice):
-                                    <select name="diagnosis"
-                                            multiple
-                                            ng-model="a.diagnosis"
-                                            ng-multiple="true"
-                                            ng-options="i.name for i in
-                                    input_template_diagnosis"/>
-                                </div>
-                                <div class="row">
-                                    GFR:
-                                    <select name="gfr" ng-model="a.GFR"
-                                            ng-options="i.name for i in input_template_GFR"/>
-                                </div>
-                                <div class="row">
-                                    Hemoglobin:
-                                    <select name="hemo" ng-model="a.Hemo"
-                                            ng-options="i.name for i in input_template_Hemo"/>
-                                </div>
-                                <div class="row">
-                                    Phosphorus:
-                                    <select name="pho" ng-model="a.Pho"
-                                            ng-options="i.name for i in input_template_Pho"/>
-                                </div>
-                                <div class="row">
-                                    Albumin:
-                                    <select name="albumin"
-                                            ng-model="a.Albumin"
-                                            ng-options="i.name for i in input_template_Albumin"/>
-                                </div>
-                                <div class="row">
-                                    Calcium:
-                                    <select name="crt" ng-model="a.Cal"
-                                            ng-options="i.name for i in input_template_Cal"/>
-                                </div>
-                                <div class="row">
-                                    CO2:
-                                    <select name="co2" ng-model="a.CO2"
-                                            ng-options="i.name for i in input_template_CO2"/>
-                                </div>
-                                <div class="row">
-                                    Creatinine:
-                                    <select name="crt" ng-model="a.Crt"
-                                            ng-options="i.name for i in input_template_Crt"/>
-                                </div>
-                                <div class="row">
-                                    Potassium:
-                                    <select name="pot" ng-model="a.Pot"
-                                            ng-options="i.name for i in input_template_Pot"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                Visit {{$index+1}} info
-                                <div class="row">
-                                    diagnosis: {{a.diagnosis.value}}
-                                </div>
-                                <div class="row">
-                                    GFR: {{a.GFR}}
-                                </div>
-                                <div class="row">
-                                    Hemoglobin: {{a.Hemo}}
-                                </div>
-                                <div class="row">
-                                    Phosphorus: {{a.Pho}}
-                                </div>
-                                <div class="row">
-                                    Albumin: {{a.Albumin}}
-                                </div>
-                                <div class="row">
-                                    Calcium: {{a.Cal}}
-                                </div>
-                                <div class="row">
-                                    CO2: {{a.CO2}}
-                                </div>
-                                <div class="row">
-                                    Creatinine: {{a.Crt}}
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+                
                 </div>
                <input type="hidden" name="user_input_total" value={{p}} />
                 <input class="button" type="Submit" value="Submit">

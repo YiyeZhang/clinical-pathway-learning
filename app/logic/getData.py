@@ -3,19 +3,22 @@ from getSample import Sample
 from numpy import *
 import json
 
-class Data:
-    def getData(self):
+JSON_FILE = "data/sample_data.json"
 
-        fh = open ("/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/postDefense/data_processed.json",'r')
+class Data:
+    def getData(self,path,numvisit):
+
+        fh = open(path,'r')
         data = json.load(fh)
         s = Sample()
-        sample=s.getSample() #transplant
+        sample=s.getSample() 
 
         ET={}
+        
         for pid in data:
-            if len(data[pid]['appt'])>=0 and str(pid) in sample:
-            # if len(data[pid]['appt'])>=0:
-
+            # if len(data[pid]['appt'])>=numvisit and str(pid) in sample:
+            if len(data[pid]['appt'])>=numvisit:
+                
                 ET[pid]={}
                 ET[pid]['age']=data[pid]['age']
                 ET[pid]['sex']=data[pid]['sex']
@@ -48,6 +51,9 @@ class Data:
         t=Structure()
         node=t.getNode(ET)
         t.getV(node,ET)
+
+        with open(JSON_FILE, 'w') as outfile:
+            json.dump(ET, outfile)
 
         return ET
 

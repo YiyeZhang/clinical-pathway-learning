@@ -8,7 +8,6 @@ import processPair
 import getGraph
 
 JSON_FILE_OUT = "data/data_out2.json"
-JSON_FILE = "data/data.json"
 
 class Sequence:    
     def getNodes(self,data):
