@@ -3,7 +3,6 @@ from flask import render_template,flash,redirect,request
 from app import app
 from forms import FormOne, FormThree
 import os,thread
-#import MySQLdb as mdb
 import sys,getopt,os,tempfile,itertools
 from app.logic.Sequence import Sequence
 from app.logic.printNodedesc2 import PrintVVNode

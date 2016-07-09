@@ -13,7 +13,7 @@ class PrintNode:
             d['name']=v
             d['type']=Vdesc[v][0]+'type'
             d['diagnosis']=sorted(nodedesc.get(Vdesc[v][1],'-'))
-            # d['diagnosis']=Vdesc[v][1]
+            #d['diagnosis']=Vdesc[v][1]
             d['proc']=nodedesc.get(Vdesc[v][2],'-')
             d['med']=nodedesc.get(Vdesc[v][3],'-')
             nodedesclist.append(d)

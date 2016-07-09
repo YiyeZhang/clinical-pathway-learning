@@ -48,12 +48,12 @@ class Data:
         matchpt=len(ET)
         print "match patient",matchpt
 
+
         t=Structure()
         node=t.getNode(ET)
         t.getV(node,ET)
 
-        with open(JSON_FILE, 'w') as outfile:
-            json.dump(ET, outfile)
+
 
         return ET
 

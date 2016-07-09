@@ -44,7 +44,7 @@ class Structure:
             if diaglist_distinct[s] != '':
                 nodedesc['D' + str(s)] = diaglist_distinct[s]
 
-        with open("/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/postDefense/nodedesc.json",
+        with open("/Users/yiyezhang/github/clinical-pathway-learning/data/nodedesc.json",
                   'w') as outfile:
             json.dump(nodedesc, outfile)
 
@@ -104,7 +104,7 @@ class Structure:
         d_visitlist=list()
         for w in range(0,len(visitlist)):
             d_visitlist.append(visitlist[w])
-        print d_visitlist
+        
         onlyonce=list()
 
         try:
@@ -119,7 +119,7 @@ class Structure:
                 Vdesc['V'+str(t)]=d_visitlist[t]
 
 
-        with open("/Users/yiyezhang/Dropbox/python_projects/ckdplatform_current/data/thesis/postDefense/Vdesc.json", 'w') as outfile:
+        with open("/Users/yiyezhang/github/clinical-pathway-learning/data/Vdesc.json", 'w') as outfile:
             json.dump(Vdesc, outfile)
 
         return Vdesc
