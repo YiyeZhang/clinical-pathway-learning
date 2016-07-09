@@ -113,7 +113,7 @@ class Sequence:
 
         return visitpair,DT
 
-    def getTrans(self,visitpair,VT,DT):
+    def getTrans(self,visitpair,VT,DT,prob,count):
 
         pairinput,pairinputdelta=processPair.processPair(visitpair)
         pairoutput=getTr.getTr(pairinput,pairinputdelta)
@@ -122,7 +122,7 @@ class Sequence:
         VVseqinput,targetct=processPair2.processPair2(visitpair2)
         VVseqoutput=getTr2.getTr2(VVseqinput,targetct)
         # finalgraph=VVseqoutput
-        finalgraph=getGraph.getGraph(VVseqoutput)
+        finalgraph=getGraph.getGraph(VVseqoutput,prob,count)
 
         with open(JSON_FILE_OUT, 'w') as outfile:
             json.dump(finalgraph, outfile)

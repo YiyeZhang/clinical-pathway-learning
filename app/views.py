@@ -24,6 +24,8 @@ def submit():
     res = json.loads(request.form['user_input_total'])
     path = res['path']
     numvisit = int(res['numvisit'])
+    prob=float(res['prob'])
+    count=int(res['count'])
     
     c=Data()
     data=c.getData(path,numvisit)
@@ -36,7 +38,7 @@ def submit():
     nodes=s.getNodes(data)
     VT, tempDT,OT=s.getSeq(nodes)
     visitpair,DT=s.addTime(VT,tempDT)
-    results_list,pairoutput,VVT=s.getTrans(visitpair,VT,DT)
+    results_list,pairoutput,VVT=s.getTrans(visitpair,VT,DT,prob,count)
 
     # print 'source','target','weight','count','scount','tcount'
     # for i in range(len(results_list)):
